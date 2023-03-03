@@ -1,0 +1,26 @@
+.MyBtn{
+    padding: 15px 30px;
+
+    background-color: transparent;
+    transition: .5s;
+
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0000008d;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.MyBtn:hover{
+    padding: 15px 50px;
+}
+
+.MyBtn:active{
+    transform: scale(.8);
+}

@@ -59,9 +59,7 @@ function App() {
                     marks={sortAndSearchedMarks} createMarks={createMarks} 
                     open={open} setOpen={setOpen}/>
                   }/>
-                  <Route path="/about" element={<About
-                    
-                  />}/>
+                  <Route path="/about" element={<About />}/>
                 </Routes>
           </div>
     </BrowserRouter>

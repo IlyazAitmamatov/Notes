@@ -14,7 +14,7 @@ function App() {
   const [selectedSort, setSelectedSort] = useState('')
   // состаяние поиска
   const [search, setSearch] = useState('')
-
+  
   const sortedMarks = useMemo(() => {
     if(selectedSort){
       return [...marks].sort((a, b) => a[selectedSort].localeCompare(b[selectedSort]))
@@ -52,12 +52,13 @@ function App() {
                   <Route
                   path="/"
                   element={
-                  <Home
-                    search={search} setSearch={setSearch}
-                    setSelectedSort={setSelectedSort} selectedSort={selectedSort} sortMarks={sortMarks}
-                    removeAll={removeAllMark} remove={removMark} 
-                    marks={sortAndSearchedMarks} createMarks={createMarks} 
-                    open={open} setOpen={setOpen}/>
+                    <Home
+                      search={search} setSearch={setSearch}
+                      setSelectedSort={setSelectedSort} selectedSort={selectedSort} sortMarks={sortMarks}
+                      removeAll={removeAllMark} remove={removMark} 
+                      marks={sortAndSearchedMarks} createMarks={createMarks} 
+                      open={open} setOpen={setOpen}
+                    /> 
                   }/>
                   <Route path="/about" element={<About />}/>
                 </Routes>

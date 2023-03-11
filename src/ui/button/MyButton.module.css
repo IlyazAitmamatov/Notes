@@ -18,9 +18,9 @@
 }
 
 .MyBtn:hover{
-    padding: 15px 50px;
+    padding: 15px 35px;
 }
 
 .MyBtn:active{
-    transform: scale(.8);
+    transform: scale(.9);
 }

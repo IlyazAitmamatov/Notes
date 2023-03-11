@@ -4,7 +4,7 @@ import MyButton from '../ui/button/MyButton';
 import MyInput from '../ui/input/MyInput';
 import TextArea from '../ui/textArea/textArea';
 
-const CreateMarksForm = ({createMarks, setOpen}) => {
+const CreateMarksForm = ({createMarks, setOpen, open}) => {
     const [mark, setMark] = useState({title: '', body: ''})
 
     const newPost = (e) => {
@@ -19,7 +19,7 @@ const CreateMarksForm = ({createMarks, setOpen}) => {
     return (
         <>
 
-        <div onClick={() => setOpen(false)} className="creeteMarksFormShadow"></div>
+        <div className='creeteMarksFormShadow'></div>
         <div className='creeteMarksForm'>
             <form>
                 <MyInput
@@ -33,12 +33,20 @@ const CreateMarksForm = ({createMarks, setOpen}) => {
                     value={mark.body}
                     style={{margin: '20px 0'}}
                 />
-                <MyButton 
-                    onClick={newPost}
-                    style={{backgroundColor: '#fff', border: '0', textAlign: 'center'}}
+                <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+                    <MyButton 
+                        onClick={newPost}
+                        style={{margin: '0 10px 0 0', backgroundColor: '#fff', border: '0', textAlign: 'center'}}
+                        >
+                        Сохранить и создать
+                    </MyButton>
+                    <MyButton
+                        style={{backgroundColor: '#fff', border: '0', textAlign: 'center'}}
+                        onClick={() => setOpen(false)}
                     >
-                    Сохранить и создать
-                </MyButton>
+                        Отмена
+                    </MyButton>
+                </div>
             </form>
         </div>
 

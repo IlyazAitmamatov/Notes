@@ -40,7 +40,7 @@ body{
     margin: 40px 0;
 
     border: 1px solid #00000043;
-    border-radius: 30px;
+    border-radius: 10px;
 
     display: flex;
     flex-direction: column;

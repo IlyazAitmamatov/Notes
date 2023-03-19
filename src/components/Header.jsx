@@ -10,7 +10,7 @@ const Header = () => {
             <div className="headerLogoNavBar">
                 {/* logo */}
                 <div className="logo">
-                    <Link className='logo_inner' to={'/'}>ZamZam</Link>
+                    <Link className='logo_inner' to={'/'}>Notes</Link>
                 </div>
 
                 {/* navBAr */}

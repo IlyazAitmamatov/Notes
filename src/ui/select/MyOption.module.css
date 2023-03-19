@@ -1,14 +1,16 @@
 .mySelect{
+    position: relative;
+    overflow: hidden;
+
     outline: 0;
     appearance: none;
     padding: 15px 30px;
 
     border: 1px solid #00000043;
-    border-radius: 100px;
+    border-radius: 10px;
 
     font-size: 16px;
     cursor: pointer;
-    transition: .5s;
 
     background-color: transparent;
 }

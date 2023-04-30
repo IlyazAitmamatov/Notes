@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styleSheet/styleComponents/Header.css'
+import '../styleSheet/styleComponents/Header.css';
+import MyButton from '../ui/button/MyButton'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -20,12 +21,15 @@ const Header = () => {
                 </nav>
             </div>
 
-            <div className="autorezasia">
-                <div className="autorezasia_entrance">
-                    <span></span>
-                </div>
-                <div className="autorezasia_regestration">
-                    <span></span>
+            <div style={{display: 'flex'}} className="loginAvtorisationTheme">
+                {/* avtorisation */}
+                <div className="avtorisation">
+                    <div className="avtorisation_entrance avtorisation_block">
+                        <Link to={'/login'} className='avtorisation_hrefOne avtorisation_href'>Логин</Link>
+                    </div>
+                    <div className="avtorisation_regestration avtorisation_block">
+                        <Link to={'regestration'} className='avtorisation_hrefTwo avtorisation_href'>Регестрация</Link>
+                    </div>
                 </div>
             </div>
         </header>

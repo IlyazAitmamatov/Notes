@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import '../styleSheet/styleComponents/CreateMarksForm.css'
-import MyButton from '../ui/button/MyButton';
-import MyInput from '../ui/input/MyInput';
-import TextArea from '../ui/textArea/textArea';
+import '../../styleSheet/styleComponents/CreateMarksForm.css'
+import MyButton from '../../ui/button/MyButton';
+import MyInput from '../../ui/input/MyInput';
+import TextArea from '../../ui/textArea/textArea';
 
 const CreateMarksForm = ({createMarks, setOpen}) => {
     const [mark, setMark] = useState({title: '', body: ''})
@@ -34,30 +34,19 @@ const CreateMarksForm = ({createMarks, setOpen}) => {
                     style={{margin: '20px 0'}}
                 />
                 <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-                    {
-                        mark.title
-                        ?<MyButton 
-                        onClick={newPost}
-                        style={{margin: '0 10px 0 0', backgroundColor: '#fff', border: '0', textAlign: 'center'}}
-                        >
-                        Сохранить и создать
-                        </MyButton>
-                        :''
-                    }
-
-                    {/* {
-                        mark.body
-                        ?<MyButton 
-                        onClick={newPost}
-                        style={{margin: '0 10px 0 0', backgroundColor: '#fff', border: '0', textAlign: 'center'}}
-                        >
-                        Сохранить и создать
-                        </MyButton>
-                        :''
-                    } */}
+                        {
+                            mark.title
+                            ?<MyButton
+                                onClick={newPost}
+                                style={{margin: '0 10px 0 0', backgroundColor: '#303030', border: '0', textAlign: 'center'}}
+                            >
+                                Создать
+                            </MyButton>
+                            :''
+                        }
 
                     <MyButton
-                        style={{backgroundColor: '#fff', border: '0', textAlign: 'center'}}
+                        style={{backgroundColor: '#303030', border: '0', textAlign: 'center'}}
                         onClick={() => setOpen(false)}
                     >
                         Отмена

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import BookMarksMark from '../components/BookMarksMark';
-import CreateBookmarks from '../components/CreateBookmarks';
-import CreateMarksForm from '../components/CreateMarksForm';
+import React from 'react';
+import BookMarksMark from '../components/Marks/BookMarksMark';
+import CreateBookmarks from '../components/CreateMarks/CreateBookmarks';
+import CreateMarksForm from '../components/CreateMarks/CreateMarksForm';
 import Search from '../components/Search';
 import SortAnfDelete from '../components/SortAnfDelete';
 

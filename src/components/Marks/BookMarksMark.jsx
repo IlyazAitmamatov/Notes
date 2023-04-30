@@ -6,7 +6,7 @@ const BookMarksMark = ({marks, remove}) => {
     if(!marks.length){
         return(
             <div className='addMark'>
-                    <p style={{textAlign: 'center', fontWeight: '100', fontSize: '20px'}}>Заметок нету</p>
+                    <p style={{textAlign: 'center', fontWeight: '100', fontSize: '20px', color: '#ffffff9c'}}>Заметок нету</p>
             </div>
         )
     }

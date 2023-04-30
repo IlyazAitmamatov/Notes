@@ -3,12 +3,16 @@
     padding: 16px 30px;
 
     font-size: 20px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #303030;
     border: 1px solid #00000043;
     font-weight: 700;
 
     border-radius: 10px;
 
     outline: 0;
+}
+
+.MyInput:focus{
+    background-color: #252525;
 }

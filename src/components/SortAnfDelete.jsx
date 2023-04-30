@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styleSheet/styleComponents/SortAndDelete.css'
-import MyButton from '../ui/button/MyButton';
 import MyOption from '../ui/select/MyOption';
 
 const SortAnfDelete = (props) => {
@@ -9,9 +8,7 @@ const SortAnfDelete = (props) => {
         <div className='container'>
            <div className="sortAndDelete">
                 <div className="AllDelete">
-                    <MyButton onClick={() => props.removeAll()} style={{color: '#D53032', border: 'solid 1px #D53032'}}>
-                        Удалить все
-                    </MyButton>
+                    <a className='delete' onClick={() => props.removeAll()}>Удалить все</a>
                 </div>
                 <div className="sort">
                     <MyOption 

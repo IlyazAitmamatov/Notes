@@ -3,7 +3,8 @@
     padding: 16px 30px;
 
     font-size: 20px;
-    color: #000;
+    color: #ffffff9c;
+    background-color: #303030;
     border: none;
     border-radius: 10px;
     font-weight: 400;
@@ -16,4 +17,8 @@
 
 .textArea::placeholder{
     font-weight: 700;
+}
+
+.textArea:focus{
+    background-color: #252525;
 }

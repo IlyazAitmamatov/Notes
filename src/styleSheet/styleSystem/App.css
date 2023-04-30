@@ -10,15 +10,15 @@
 
 *::selection{
     background-color: #D53032;
-    color: #fff;
+    color: #ffffff9c;
 }
 
 body{
     font-family: sans-serif;
 
     font-size: 15px;
-    color: #000;
-    background-color: #fefefe;
+    color: #ffffff9c;
+    background-color: #101010;
     line-height: 1;
     letter-spacing: .7px;
 }
@@ -34,12 +34,13 @@ body{
     margin: 0 auto;
 }
 
-.marks{
+.mark{
     width: 100%;
     padding: 40px;
     margin: 40px 0;
 
-    border: 1px solid #00000043;
+    background-color: #303030;
+    color: #ffffff9c;
     border-radius: 10px;
 
     display: flex;
@@ -57,7 +58,7 @@ body{
 .marks_title_id h1{
     font-size: 30px;
     line-height: 1;
-    color: #000;
+    color: #fff;
 }
 
 .marks_body{
@@ -69,7 +70,7 @@ body{
 
     font-size: 22px;
     line-height: 1.7;
-    color: #000000a1;
+    color: #ffffff9c;
 }
 
 .addMark{
@@ -85,4 +86,36 @@ body{
     align-items: center;
 
     color: #0000007b;
+}
+
+.delete{
+    position: relative;
+    overflow: hidden;
+    
+    padding: 15px 30px;
+
+    background-color: transparent;
+
+    color: #D53032;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #0000008d;
+    border-radius: 10px;
+    border: 1px solid #D53032;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: #D53032;
+    color: #fff;
+}
+
+.delete:active{
+    background-color: transparent;
+    color: #D53032;
 }

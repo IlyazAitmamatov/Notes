@@ -3,7 +3,11 @@ import './styleSheet/styleSystem/App.css'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Contacts from "./pages/Contacts"
+import InMarks from "./pages/InMarks";
 import Header from "./components/Header";
+import Regestration from "./components/Regestration";
+import LogIn from "./components/LogIn";
  
 function App() {
   // все заметки хронться здесь
@@ -61,6 +65,9 @@ function App() {
                     /> 
                   }/>
                   <Route path="/about" element={<About />}/>
+                  <Route path="/regestration" element={<Regestration/>}/>
+                  <Route path="/login" element={<LogIn/>}/>
+                  <Route path="/contact" element={<Contacts/>}/>
                 </Routes>
           </div>
     </BrowserRouter>

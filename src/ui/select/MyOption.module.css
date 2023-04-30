@@ -6,11 +6,12 @@
     appearance: none;
     padding: 15px 30px;
 
-    border: 1px solid #00000043;
+    border: 1px solid #303030;
+    color: #ffffff9c;
     border-radius: 10px;
 
     font-size: 16px;
     cursor: pointer;
 
-    background-color: transparent;
+    background-color: #303030;
 }
